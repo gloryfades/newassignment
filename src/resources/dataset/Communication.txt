@@ -1,0 +1,57 @@
+Question 1: Hello,
+
+I'm new to search engines, and there are a lot of concepts I'm not educated on. To make my onboarding smoother, it'd help if you could provide me with some definitions of the following concepts:
+
+Records
+Indexing
+I'm also struggling with understanding what types of metrics would be useful to include in the "Custom Ranking."
+
+Cheers, George
+
+Hi George,
+
+So great to have you use Algolia for your searching needs. Below I have provided a brief definition of the concepts you asked, but if you need more information please don't hesistate to reach out to me again. You can also find all of this information in our  Algolia Documentation here: https://www.algolia.com/doc/
+
+	1. Records - Sometimes referred to as Objects, Records are items that are stored within an index. Records are JSON schemaless objects that are made searchable when you add to your index. Each attribute of your record can be used for searching, displaying, filtering, or ranking. 
+
+	2. Indexing - Is process in which you import data to Algolia's Index. This is data you wish to perform queries or searches against. In short, Indexing is the act of importing your data to Algolia's servers.
+
+	3. For Custom Ranking, the types of metrics you might use would be business related or object related. For example, if your records are data contained about books you are selling in your store, you might want to add a custom ranking attribute of popularity, ratings, number of views, or release date. 
+
+I hope I was able to help you with your understanding of the concepts and terminology with our technology!
+
+Best,
+Viet Huynh
+
+
+Question 2: Hello,
+
+Sorry to give you the kind of feedback that I know you do not want to hear, but I really hate the new dashboard design. Clearing and deleting indexes are now several clicks away. I am needing to use these features while iterating, so this is inconvenient.
+
+Regards, Matt
+
+Hi Matt,
+
+I'm sorry for your experience with the new dashboard. We definitely don't want to make your experience inconvenient in anyway. Your feedback is always appreciated and I will bring this up to my team and we will definitely take a look at the design of our dashboard. 
+
+Best,
+Viet Huynh
+
+Question 3: Hi,
+
+I'm looking to integrate Algolia in my website. Will this be a lot of development work for me? What's the high level process look like?
+
+Regards, Leo
+
+Hi Leo,
+
+I'm glad you're interested in Algolia! Integrating Algolia into your application is quick and doesn't require much work. The steps to integrate Algolia are:
+
+1. Uploading your data to Algolia's servers (Make sure that your data is cleaned up and has attributes that you can use for custom ranking)
+2. Configuring your relevance settings (ranking and/or your own ranking criteria)
+3. Building your Search UI on your site
+
+After this, you will also be able to receive insights and analytics on your Users' searches. 
+
+Best,
+Viet Huynh

@@ -1,0 +1,74 @@
+body{
+	background-image: url("../resources/graphics/background.png");
+	font-family: 'Roboto', sans-serif;
+}
+
+#main{
+	display:block;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+.container{
+	height:20%;
+	display:block;
+}
+.content{
+	background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.header{
+	height:100px;
+	background-color: #2372a3;
+}
+.wrap{
+	position:relative;
+	text-align:center;
+	padding: 25px 0;
+
+}
+.searchbar{
+	padding-left:5px;
+	width:90%;
+	height:40px;
+	position:relative;
+	border-radius: 5px;
+    box-shadow: 0 0 0 1px #4dd0e1;
+    text-align:;
+}
+.searchbar:active{
+	border: 1px solid #4dd0e1;
+
+}
+
+.results-list{
+	display:flex;
+	max-width: 1500px;
+	height:70vh;
+	background-color:grey;
+}
+
+.results-list > * {
+  position: relative;
+  overflow: scroll;
+}
+.filter{
+    flex-basis: 30%;
+	background-color: red;
+
+}
+
+.restaurants-list{
+	flex-basis: 70%;
+	background-color: yellow;
+}
+.results-list >*:first-child{
+      
+}
