@@ -3,6 +3,16 @@ var algoliasearch = require('algoliasearch');
 var client = algoliasearch('EVO3VV6L3P', '18d475c031dcc6b49bd53ecfb3751f6e');
 var index = client.initIndex('Restaurants');
 class Result extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = {
+			hits: [],
+		};
+	}
+
+	componentDidMount(){
+		//fetch()
+	}
 	render(){
 		return(
 			<div class = "results-list">

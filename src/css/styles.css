@@ -21,7 +21,7 @@ body{
 	background-color: #fefefe;
     margin: auto;
     border: 1px solid #888;
-    width: 80%;
+    width: 80vw;
 }
 
 .header{
@@ -50,24 +50,23 @@ body{
 
 .results-list{
 	display:flex;
-	max-width: 1500px;
 	height:70vh;
-	background-color:grey;
+	//background-color:grey;
 }
 
 .results-list > * {
   position: relative;
-  overflow: scroll;
+  overflow: auto;
 }
 .filter{
     flex-basis: 30%;
-	background-color: red;
+	background-color: blue;
 
 }
 
 .restaurants-list{
 	flex-basis: 70%;
-	background-color: yellow;
+	background-color: grey;
 }
 .results-list >*:first-child{
       
