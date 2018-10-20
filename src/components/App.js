@@ -5,7 +5,7 @@ import Result from './Result.js';
 var algoliasearch = require('algoliasearch');
 var client = algoliasearch('EVO3VV6L3P', '18d475c031dcc6b49bd53ecfb3751f6e');
 var index = client.initIndex('Restaurants');
-
+var helper = algoliasearchHelper(client,'Restaurants')
 class App extends React.Component{
 	constructor(props){
 		super(props);
@@ -47,11 +47,10 @@ class App extends React.Component{
     	// this.setState({ search: e.target.value});
     	var value = e.currentTarget.value;
     	console.log(this.state.hits);
-        index.search(value, this.state.hits, function(err, content){
+        index.search(value,  function(err, content, this.state.hits){
         	console.log(value);
         	console.log(content.hits);
 
-        	window.setState({hits: content.hits});
         	return content.hits;
 
         });
