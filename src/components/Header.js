@@ -6,7 +6,7 @@ class Header extends React.Component{
 	constructor(props) {
 		super(props);
 		this.state = {search : this.props.search};
-		this.searchInput = React.createRef();
+		// this.searchInput = React.createRef();
 	}
 
 
@@ -17,7 +17,7 @@ class Header extends React.Component{
 					<div class = "search">
 				       <input class = "searchbar"
 				         placeholder="Search for Restaurants by Name, Cuisine, Location"
-				         ref= {(searchInput) => {this.searchInput = searchInput}}
+				         // ref= {(searchInput) => {this.searchInput = searchInput}}
 				         onInput ={this.props.handleChange.bind(this)}
 				       />
 				     </div>

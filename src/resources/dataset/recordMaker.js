@@ -5,7 +5,7 @@ var csv = require("fast-csv");
 const chunk = require('lodash.chunk');
 
 var client = algoliasearch('EVO3VV6L3P', '18d475c031dcc6b49bd53ecfb3751f6e');
-var index = client.initIndex('Restaurants-Update');
+var index = client.initIndex('RestaurantsV2');
 
 
 let objectToCuisine = {};
@@ -35,10 +35,10 @@ let records = JSON.parse(inputJSON);
 							records[i]['food_type'] = objectDetails[0];
 							break;
 						case 1:
-							records[i]['stars_count'] = objectDetails[1];
+							records[i]['stars_count'] = parseFloat(objectDetails[1]);
 							break;
 						case 2: 
-							records[i]['reviews_count'] = objectDetails[2];
+							records[i]['reviews_count'] = parseInt(objectDetails[2]);
 							break;
 						case 3:
 							records[i]['neighborhood'] = objectDetails[3];

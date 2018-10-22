@@ -23,10 +23,13 @@ body{
     border: 1px solid #888;
     width: 80vw;
 }
+.info{
+	color:#9A9A9A;
+}
 
 .header{
 	height:100px;
-	background-color: #2372a3;
+	background-color: #1C688E;
 }
 .wrap{
 	position:relative;
@@ -35,19 +38,33 @@ body{
 
 }
 .searchbar{
+	font-size:1em;
 	padding-left:5px;
 	width:90%;
 	height:40px;
 	position:relative;
 	border-radius: 5px;
-    box-shadow: 0 0 0 1px #4dd0e1;
-    text-align:;
 }
 .searchbar:active{
 	border: 1px solid #4dd0e1;
-
+	
 }
-
+.ticker{
+	display:flex;
+	line-height: 1;
+	margin-top:1em;
+	padding-left:4em;
+}
+#res{
+	font-weight:bold;
+	font-size:16px;
+	line-height: 2;
+}
+#time{
+	padding-left:.5em;
+	font-size:12px;
+	line-height: 3.5;
+}
 .results-list{
 	display:flex;
 	height:70vh;
@@ -58,16 +75,104 @@ body{
   position: relative;
   overflow: auto;
 }
+.heading{
+	padding-left:1em;
+}
 .filter{
     flex-basis: 30%;
-	background-color: blue;
+	background-color: white;
+	border-right: 2px solid #9A9A9A;
+;
 
 }
+.click-filter{
+	font-size:.75em;
+	margin:0;
+	list-style:none;
+	display:flex;
+	justify-content: space-between;
+	width:80%;
+	height:2em;
+	line-height: .5em;
+	border-radius:5px;
+	padding:0px 2px;
 
+}
+.start{
+	align-items:flex-start;
+}
+.end{
+	align-items:flex-end;
+}
+.click-filter:hover {
+	background-color: #2897C5;
+	color: #FFFFFF;
+}
+.click-filter.active{
+	color: #FFFFFF;
+	background-color: #2897C5;
+}
+.rating-filter{
+	font-size:1em;
+	list-style:none;
+	margin-right:20%;
+	margin-bottom: 2px;
+	padding: .15em .15em .02em .15em;
+	width: 5em;
+	border-radius:5px;
+
+}
+.rating-filter:hover {
+	background-color: #2897C5;
+}
+.rating-filter.active{
+	background-color: #2897C5;
+}
+.payment-filter{
+	font-size: .9em;
+	list-style:none;
+	margin-right:20%;
+	border-radius:5px;
+	padding:2px;
+}
+.payment-filter:hover {
+	color: #FFFFFF;
+	background-color: #2897C5;
+}
+.payment-filter.active{
+	color: #FFFFFF;
+	background-color: #2897C5;
+}
 .restaurants-list{
 	flex-basis: 70%;
-	background-color: grey;
+	background-color: white;
 }
 .results-list >*:first-child{
       
+}
+.list-restaurant{
+	list-style:none;
+	padding:1em;
+}
+.details{
+	display:flex;
+	flex-direction: row;
+}
+
+.restaurant-name{
+	height:10px;
+	padding:0;
+}
+.image{
+	vertical-align:center;
+	height:120px;
+	width:120px;
+	border-radius:5px;
+}
+.story{
+	margin-left: 1em;
+}
+.star{
+	height:1em;
+	width:1em;
 }

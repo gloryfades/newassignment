@@ -45,11 +45,12 @@ Regards, Leo
 
 Hi Leo,
 
-I'm glad you're interested in Algolia! Integrating Algolia into your application is quick and doesn't require much work. The steps to integrate Algolia are:
+I'm glad you're interested in Algolia! Integrating Algolia into your application is quick and doesn't require much work. Our documentation has quick and easy to follow steps. The steps to integrate Algolia are:
 
-1. Uploading your data to Algolia's servers (Make sure that your data is cleaned up and has attributes that you can use for custom ranking)
-2. Configuring your relevance settings (ranking and/or your own ranking criteria)
-3. Building your Search UI on your site
+1. Setting up your environment to work with Algolia
+2. Uploading your data to Algolia's servers (Make sure that your data is cleaned up and has attributes that you can use for custom ranking)
+3. Using your uploaded data with our API and configuring your relevance settings (ranking and/or filtering/faceting)
+4. Building your Search UI with Instantsearch on your site (We have an API with a tutorial that will quickly get you started)
 
 After this, you will also be able to receive insights and analytics on your Users' searches. 
 
